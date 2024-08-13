@@ -15,4 +15,5 @@ func TestQueuePop(t *testing.T) {
 	q.Add(1)
 	i := q.Pop()
 	assert.Equal(t, 1, i)
+
 }
