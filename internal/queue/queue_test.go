@@ -16,6 +16,9 @@ func TestQueuePop(t *testing.T) {
 	q.Add(2)
 	i := q.Pop(0)
 	assert.Equal(t, 1, i)
+	i = q.Pop(0)
+	assert.Equal(t, 2, i)
+	assert.Equal(t, []int{}, q.content)
 }
 
 func TestQueueLength(t *testing.T) {
